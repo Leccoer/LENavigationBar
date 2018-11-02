@@ -15,6 +15,9 @@
 		9B88FF9A218BE99A002E2C41 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B88FF99218BE99A002E2C41 /* main.m */; };
 		9B88FFA4218BE99A002E2C41 /* LENavigationBarDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B88FFA3218BE99A002E2C41 /* LENavigationBarDemoTests.m */; };
 		9B88FFAF218BE99A002E2C41 /* LENavigationBarDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B88FFAE218BE99A002E2C41 /* LENavigationBarDemoUITests.m */; };
+		9B88FFC1218BEA4C002E2C41 /* LENavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B88FFC0218BEA4C002E2C41 /* LENavigationBar.m */; };
+		9B88FFC3218BEA60002E2C41 /* LENavigationBar.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9B88FFC2218BEA60002E2C41 /* LENavigationBar.xib */; };
+		9B88FFC6218BFABD002E2C41 /* LENavigationBarConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B88FFC5218BFABD002E2C41 /* LENavigationBarConfig.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		9B88FFAA218BE99A002E2C41 /* LENavigationBarDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LENavigationBarDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B88FFAE218BE99A002E2C41 /* LENavigationBarDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LENavigationBarDemoUITests.m; sourceTree = "<group>"; };
 		9B88FFB0218BE99A002E2C41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B88FFBF218BEA4C002E2C41 /* LENavigationBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LENavigationBar.h; sourceTree = "<group>"; };
+		9B88FFC0218BEA4C002E2C41 /* LENavigationBar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LENavigationBar.m; sourceTree = "<group>"; };
+		9B88FFC2218BEA60002E2C41 /* LENavigationBar.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LENavigationBar.xib; sourceTree = "<group>"; };
+		9B88FFC4218BFABD002E2C41 /* LENavigationBarConfig.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LENavigationBarConfig.h; sourceTree = "<group>"; };
+		9B88FFC5218BFABD002E2C41 /* LENavigationBarConfig.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LENavigationBarConfig.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,7 @@
 		9B88FF7E218BE998002E2C41 = {
 			isa = PBXGroup;
 			children = (
+				9B88FFBE218BEA2E002E2C41 /* LENavigationBar */,
 				9B88FF89218BE998002E2C41 /* LENavigationBarDemo */,
 				9B88FFA2218BE99A002E2C41 /* LENavigationBarDemoTests */,
 				9B88FFAD218BE99A002E2C41 /* LENavigationBarDemoUITests */,
@@ -130,6 +139,18 @@
 				9B88FFB0218BE99A002E2C41 /* Info.plist */,
 			);
 			path = LENavigationBarDemoUITests;
+			sourceTree = "<group>";
+		};
+		9B88FFBE218BEA2E002E2C41 /* LENavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				9B88FFBF218BEA4C002E2C41 /* LENavigationBar.h */,
+				9B88FFC0218BEA4C002E2C41 /* LENavigationBar.m */,
+				9B88FFC2218BEA60002E2C41 /* LENavigationBar.xib */,
+				9B88FFC4218BFABD002E2C41 /* LENavigationBarConfig.h */,
+				9B88FFC5218BFABD002E2C41 /* LENavigationBarConfig.m */,
+			);
+			path = LENavigationBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +258,7 @@
 			files = (
 				9B88FF97218BE99A002E2C41 /* LaunchScreen.storyboard in Resources */,
 				9B88FF94218BE99A002E2C41 /* Assets.xcassets in Resources */,
+				9B88FFC3218BEA60002E2C41 /* LENavigationBar.xib in Resources */,
 				9B88FF92218BE998002E2C41 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,7 +285,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B88FF8F218BE998002E2C41 /* ViewController.m in Sources */,
+				9B88FFC6218BFABD002E2C41 /* LENavigationBarConfig.m in Sources */,
 				9B88FF9A218BE99A002E2C41 /* main.m in Sources */,
+				9B88FFC1218BEA4C002E2C41 /* LENavigationBar.m in Sources */,
 				9B88FF8C218BE998002E2C41 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -438,6 +462,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3AHZ82SGX3;
 				INFOPLIST_FILE = LENavigationBarDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -455,6 +480,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3AHZ82SGX3;
 				INFOPLIST_FILE = LENavigationBarDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "LENavigationBar.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +17,10 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    LENavigationBarConfig *config = [[LENavigationBarConfig alloc]initWithNavigationBarType:kLENavigationBarTypeDefault];
+    [LENavigationBar setConfig:config forNavigationBarType:kLENavigationBarTypeDefault];
+    LENavigationBarConfig *clearConfig = [[LENavigationBarConfig alloc]initWithNavigationBarType:kLENavigationBarTypeClear];
+    [LENavigationBar setConfig:clearConfig forNavigationBarType:kLENavigationBarTypeClear];
     return YES;
 }
 
